@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   @include container();
-  @extend %flexCenter;
+  @extend %flexAlignCenterJustSB;
 
   .content {
     h1 {
@@ -22,6 +22,43 @@
         font-size: 2rem;
         line-height: 3rem;
       }
+    }
+
+    @media (min-width: 830px) and (max-width: 1000px) {
+      width: 70%;
+    }
+
+    @media (min-width: 1000px){
+      width: 60%;
+    }
+
+  }
+
+  .animation {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #adadc0;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    line {
+      stroke: #3f51b5;
+      stroke-width: 2;
+    }
+
+  }
+
+  @media (max-width: 1000px){
+    justify-content: center;
+
+    .animation {
+      display: none;
     }
   }
 }

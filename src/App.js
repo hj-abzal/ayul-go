@@ -1,9 +1,10 @@
 import styles from './App.module.scss';
 import {Main} from "./pages/main/Main";
 import {Header} from "./components/Header/Header";
-import {createGlobalStyle} from "styled-components";
 import {Theme} from "./components/Theme/Theme";
 import {useEffect, useState} from "react";
+import {GlobalStyles} from "./components/Styled";
+import './assets/i18n/i18n';
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -29,10 +30,6 @@ function App() {
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
                 <Main/>
-                <Main/>
-                <Main/>
-                //fdsfsddsfsf
-                <Main/>
             </div>
         </Theme>
     );
@@ -40,10 +37,3 @@ function App() {
 
 export default App;
 
-
-export const GlobalStyles = createGlobalStyle`
-  body {
-    background: ${({theme}) => theme.colors.primary};
-    color: ${({theme}) => theme.colors.text};
-    transition: all 0.45s linear;
-  }`

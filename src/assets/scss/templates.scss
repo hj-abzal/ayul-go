@@ -1,0 +1,84 @@
+@mixin alignJust($align, $just) {
+  align-items: $align;
+  justify-content: $just;
+}
+
+%flex {
+  display: flex;
+}
+
+%flexAlignStartJustSA, %flexAlignCenterJustSA, %flexAlignEndJustSA, %flexWrap,
+%flexAlignCenter, %flexCenter, %flexAlignStartJustCenter, %flexAlignEndJustCenter,
+%flexAlignStartJustStart, %flexAlignEndJustEnd, %flexAlignCenterJustStart,
+%flexAlignCenterJustEnd, %flexAlignCenterJustSB, %flexAlignStartJustSB,
+%flexAlignEndJustSB, %flexAlignEndJustStart {
+  @extend %flex;
+}
+
+%flexWrap {
+  flex-wrap: wrap;
+}
+
+%flexAlignCenter {
+  align-items: center;
+}
+
+%flexCenter {
+  @include alignJust(center, center);
+}
+
+%flexAlignStartJustCenter {
+  @include alignJust(flex-start, center);
+}
+
+%flexAlignEndJustCenter {
+  @include alignJust(flex-end, center);
+}
+
+%flexAlignEndJustStart {
+  @include alignJust(flex-end, flex-start);
+}
+
+%flexAlignStartJustStart {
+  @include alignJust(flex-start, flex-start);
+}
+
+%flexAlignEndJustEnd {
+  @include alignJust(flex-end, flex-end);
+}
+
+%flexAlignCenterJustStart {
+  @include alignJust(center, flex-start);
+}
+
+%flexAlignCenterJustEnd {
+  @include alignJust(center, flex-end);
+}
+
+%flexAlignCenterJustSB {
+  @include alignJust(center, space-between);
+}
+
+%flexAlignStartJustSB {
+  @include alignJust(flex-start, space-between);
+}
+
+%flexAlignEndJustSB {
+  @include alignJust(flex-end, space-between);
+}
+
+%flexAlignStartJustSA {
+  @include alignJust(flex-start, space-around);
+}
+
+%flexAlignCenterJustSA {
+  @include alignJust(center, space-around);
+}
+
+%flexAlignEndJustSA {
+  @include alignJust(flex-end, space-around);
+}
+
+%flexColumn {
+  flex-direction: column;
+}

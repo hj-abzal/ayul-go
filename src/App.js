@@ -31,6 +31,7 @@ function App() {
                 <Main/>
                 <Main/>
                 <Main/>
+                <Main/>
             </div>
         </Theme>
     );

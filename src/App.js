@@ -32,6 +32,7 @@ function App() {
                 <Main/>
                 <Main/>
                 //fdsfsddsfsf
+                <Main/>
             </div>
         </Theme>
     );

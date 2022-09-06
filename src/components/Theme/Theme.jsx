@@ -3,7 +3,7 @@ import {ThemeProvider} from "styled-components";
 
 const lightTheme = {
     colors: {
-        primary: '#f0f2f5',
+        primary: '#ffffff',
         text: '#1d1d1d',
     },
     border: '1px solid #1d1d1d',
@@ -13,7 +13,7 @@ const lightTheme = {
 const darkTheme = {
     colors: {
         primary: '#1d1d1d',
-        text: '#f0f2f5',
+        text: '#ffffff',
     },
     border: '1px solid #f0f2f5',
     borderTriangle: '25px solid #f0f2f5'

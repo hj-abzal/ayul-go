@@ -9,7 +9,7 @@ export const Header = (props) => {
             <div className={s.content}>
                 <h2>
                     <Icon
-                        color="#f0f2f5"
+                        color="#007FFF"
                         size={50}
                         icon="instagram"
                         className={s.icon}
@@ -19,7 +19,7 @@ export const Header = (props) => {
                 <div className={s.actionIcons}>
                     <Icon
                         onClick={props.changeTheme}
-                        color="#f0f2f5"
+                        color="#007FFF"
                         size={50}
                         icon="theme"
                         className={s.icon}

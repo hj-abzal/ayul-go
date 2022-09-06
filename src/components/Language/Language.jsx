@@ -50,7 +50,7 @@ export const Language = () => {
         <div className={s.wrapper}>
             <Icon
                 onClick={() => setEditMode(!editMode)}
-                color="#f0f2f5"
+                color="#007FFF"
                 size={30}
                 icon="language"
             />

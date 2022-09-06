@@ -1,10 +1,12 @@
 import styles from './App.module.scss';
-import {Main} from "./pages/main/Main";
+import {Main} from "./pages/Main/Main";
 import {Header} from "./components/Header/Header";
 import {Theme} from "./components/Theme/Theme";
 import {useEffect, useState} from "react";
 import {GlobalStyles} from "./components/Styled";
 import './assets/i18n/i18n';
+import {Mission} from "./pages/Mission/Mission";
+import {RecuiredForAyul} from "./pages/RequiredForAyul/RecuiredForAyul";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -30,6 +32,8 @@ function App() {
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
                 <Main/>
+                <Mission/>
+                <RecuiredForAyul/>
             </div>
         </Theme>
     );

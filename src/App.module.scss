@@ -13,7 +13,7 @@
 
     /* width */
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 3px;
     }
 
     /* Track */
@@ -23,7 +23,7 @@
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-        background: $bgPrimaryColor;
+        background: $focusColor;
         border-radius: 10px;
     }
 

@@ -8,8 +8,8 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: $bgPrimaryColor;
-  border-bottom: thick double white;
+  background-color: rgba(255, 255, 255, 0.71);
+  border-bottom: thick double $focusColor;
 
   .content {
     height: 100%;
@@ -21,14 +21,13 @@
         cursor: pointer;
       }
       a {
-        color: #f0f2f5;
+        color: $focusColor;
         text-decoration: none;
       }
     }
 
     .actionIcons {
       @extend  %flexCenter;
-
     }
   }
 }

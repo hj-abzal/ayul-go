@@ -8,7 +8,7 @@ export const RequiredForAyul = () => {
     return (
         <Container className={s.wrapper}>
             <div className={s.content}>
-                <h1>{t("REQUIRED_FO_AYUL")}</h1>
+                <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
                 <div>
                     <div></div>
                     <div></div>

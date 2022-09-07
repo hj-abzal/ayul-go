@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import {GlobalStyles} from "./components/Styled";
 import './assets/i18n/i18n';
 import {Mission} from "./pages/Mission/Mission";
-import {RecuiredForAyul} from "./pages/RequiredForAyul/RecuiredForAyul";
+import {RequiredForAyul} from "./pages/RequiredForAyul/RequiredForAyul";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -33,7 +33,7 @@ function App() {
                 <Header changeTheme={changeTheme}/>
                 <Main/>
                 <Mission/>
-                <RecuiredForAyul/>
+                <RequiredForAyul/>
             </div>
         </Theme>
     );

@@ -1,5 +1,6 @@
 {
   "name": "ayul-go-landing",
+  "homepage": "https://ayul-go.kz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

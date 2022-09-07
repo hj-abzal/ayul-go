@@ -14,7 +14,7 @@ export const Header = (props) => {
                         icon="instagram"
                         className={s.icon}
                     />
-                    <a href="https://www.instagram.com/hj_abzal/" target='_blank'>@ayul.go</a>
+                    <a href="https://www.instagram.com/ayul.go/" target='_blank'>@ayul.go</a>
                 </h2>
                 <div className={s.actionIcons}>
                     <Icon

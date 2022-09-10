@@ -13,8 +13,9 @@ export const Container = styled.div`
 `
 
 export const BackgroundDifferent = styled.div`
-  background: ${props => props.theme.colors.text};
-  color: ${props => props.theme.colors.primary};
+  background: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.text};
+  border: 0.1rem solid ${props => props.theme.colors.text};
 `
 
 

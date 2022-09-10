@@ -5,12 +5,13 @@
     "WHAT_WE_DO": "We conduct free training programs, communicate with local teenagers, study and",
     "CREATE_WEBSITE": "create websites."
   },
-  "REQUIRED_FO_AYUL": {
-    "TITLE": "Let's go to Ayul!"
-  },
 
   "MISSION": {
     "TITLE": "What is our goal?",
-    "WHO_WE_ARE": "Our first goal is to make the life of children in the village more interesting, to help them choose a career path in life, and to provide them with a foundation for the future."
+    "OUR_GOAL": "Our first goal is to make the life of children in the village more interesting, to help them choose a career path in life, and to provide them with a foundation for the future."
+  },
+
+  "REQUIRED_FO_AYUL": {
+    "TITLE": "Let's go to Ayul!"
   }
 }

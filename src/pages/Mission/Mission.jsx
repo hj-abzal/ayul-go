@@ -16,7 +16,7 @@ export const Mission = () => {
             <div className={s.content}>
                 <h1> {t('MISSION.TITLE')}<br/></h1>
                 <span className={s.header}>
-                    {t('MISSION.WHO_WE_ARE')}<br/>
+                    {t('MISSION.OUR_GOAL')}<br/>
             </span>
 
             </div>

@@ -15,17 +15,16 @@ export const Header = (props) => {
                             size={50}
                             icon="instagram"
                             className={s.iconInst}
-                        />
-                        @ayul.go
+                        />  @ayul.go
                     </a>
                 </h2>
                 <div className={s.actionIcons}>
                     <Icon
                         onClick={props.changeTheme}
-                        color="black"
-                        size={50}
-                        icon="theme"
-                        className={s.icon}
+                            color="black"
+                            size={50}
+                            icon="theme"
+                            className={s.icon}
                     />
                     <Language/>
                 </div>

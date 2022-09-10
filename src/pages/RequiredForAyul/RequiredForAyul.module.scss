@@ -7,7 +7,9 @@
   @extend %flexCenter;
 
   .content {
-    @include content();
+    width: 100%;
+    margin: 0 auto;
+
     h1 {
       color: $focusColor;
       font-weight: 900;
@@ -49,4 +51,33 @@
 .blueBg {
   color: #f0f2f5;
   background-color: $focusColor;
+}
+
+.bossDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+
+}
+.ball{
+  margin-bottom: 25px;
+  margin-top: 18px;
+  line-height: 1.35;
+  font-family: Arial,sans-serif;
+  text-align: center;
+
+}
+.ball_icon{
+  color: #007fff;
+}
+
+.header{
+  @include header();
+}
+.bigMom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
 }

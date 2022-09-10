@@ -12,7 +12,7 @@
     h1 {
       color: $focusColor;
       font-weight: 900;
-      line-height: 5rem;
+      line-height: 2rem;
     }
 
     .header {
@@ -21,7 +21,11 @@
 
   }
 
-  .animation {}
+  .animation {
+    padding-left: 1rem;
+    width: 45%;
+  }
+
 
   @media (max-width: 1000px) {
     justify-content: center;

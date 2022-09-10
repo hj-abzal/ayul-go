@@ -3,6 +3,7 @@ import s from './RequiredForAyul.module.scss';
 import {Container} from "../../components/Styled";
 import {useTranslation} from "react-i18next";
 import {Icon} from "../../components/Icon/Icon";
+import {COLORS} from "../../components/Theme/Theme";
 
 export const RequiredForAyul = () => {
     const {t} = useTranslation();
@@ -10,7 +11,7 @@ export const RequiredForAyul = () => {
         <Container className={s.wrapper}>
             <div className={s.content}>
                 <div className={s.bigMom}>
-                <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
+                    <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
                     <span className={s.header}>
                         Каковы наши действия?
                     </span>
@@ -19,7 +20,7 @@ export const RequiredForAyul = () => {
                 <div className={s.bossDiv}>
                     <div className={s.ball}>
                         <Icon
-                            color="#007FFFFF"
+                            color={COLORS.focus}
                             size={100}
                             icon="number3"
                             className={s.ball_icon}/>
@@ -29,8 +30,8 @@ export const RequiredForAyul = () => {
                         </h2>
                     </div>
                     <div className={s.ball}>
-                         <Icon
-                            color="#007FFFFF"
+                        <Icon
+                            color={COLORS.focus}
                             size={100}
                             icon="number2"
                             className={s.ball_icon}/>
@@ -40,7 +41,7 @@ export const RequiredForAyul = () => {
                     </div>
                     <div className={s.ball}>
                         <Icon
-                            color="#007FFFFF"
+                            color={COLORS.focus}
                             size={100}
                             icon="number"
                             className={s.ball_icon}/>

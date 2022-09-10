@@ -4,6 +4,7 @@
 
 .wrapper {
   @include wrapper();
+  height: auto;
   @extend %flexCenter;
 
   .content {
@@ -28,7 +29,8 @@
 
   }
 
-  .animation {}
+  .animation {
+  }
 
   @media (max-width: 1000px) {
     justify-content: center;
@@ -53,28 +55,39 @@
   background-color: $focusColor;
 }
 
-.bossDiv{
+.bossDiv {
   width: 100%;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+
+    .ball {
+      width: 300px;
+    }
+  }
 }
-.ball{
+
+.ball {
+  width: 500px;
   margin-bottom: 25px;
   margin-top: 18px;
   line-height: 1.35;
-  font-family: Arial,sans-serif;
   text-align: center;
 
 }
-.ball_icon{
+
+.ball_icon {
   color: #007fff;
 }
 
-.header{
+.header {
   @include header();
 }
-.bigMom{
+
+.bigMom {
   display: flex;
   justify-content: center;
   align-items: center;

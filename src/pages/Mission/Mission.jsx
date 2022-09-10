@@ -1,16 +1,12 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import s from './Mission.module.scss';
 import {Container} from "../../components/Styled";
 import {useTranslation} from "react-i18next";
-import {gsap} from "gsap";
+import {VintageAnimation} from "../../animation/Vintage/VintageAnimation";
 
 export const Mission = () => {
     const {t} = useTranslation();
-    const el = useRef();
 
-    useEffect(() => {
-
-    })
     return (
         <Container className={s.wrapper}>
             <div className={s.content}>
@@ -18,15 +14,8 @@ export const Mission = () => {
                 <span className={s.header}>
                     {t('MISSION.OUR_GOAL')}<br/>
             </span>
-
             </div>
-            <div onClick={() => {
-                gsap.to(el.current, {
-                    // полный поворот
-                    rotation: '+=360'
-                })
-            }} ref={el} className={s.animation}>
-            </div>
+            <VintageAnimation className={s.animation}/>
         </Container>
     );
 };

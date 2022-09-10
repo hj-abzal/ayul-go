@@ -14,12 +14,9 @@ export const Mission = () => {
     return (
         <Container className={s.wrapper}>
             <div className={s.content}>
-                <h1>Какова наша цель?</h1>
+                <h1> {t('MISSION.TITLE')}<br/></h1>
                 <span className={s.header}>
-                Наша первая цель сделать жизнь детей
-                в ауле более интересным,
-                помочь им выбрать карьерный путь в жизни,
-                и обеспечить им задел на будущее.
+                    {t('MISSION.WHO_WE_ARE')}<br/>
             </span>
 
             </div>

@@ -32,6 +32,15 @@
   }
 }
 
+.iconInst {
+  padding: 0 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0 3px 10px rgba(0,0,0,.25);;
+}
 .icon {
   padding: 0 0.5rem;
 }

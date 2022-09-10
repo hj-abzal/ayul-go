@@ -9,17 +9,17 @@ export const Header = (props) => {
             <div className={s.content}>
                 <h2>
                     <Icon
-                        color="#007FFF"
+                        color="white"
                         size={50}
                         icon="instagram"
-                        className={s.icon}
+                        className={s.iconInst}
                     />
-                    <a href="https://www.instagram.com/ayul.go/" target='_blank'>@ayul.go</a>
+                    <a href="https://www.instagram.com/ayul.go/" target='_blank'> @ayul.go</a>
                 </h2>
                 <div className={s.actionIcons}>
                     <Icon
                         onClick={props.changeTheme}
-                        color="#007FFF"
+                        color="black"
                         size={50}
                         icon="theme"
                         className={s.icon}

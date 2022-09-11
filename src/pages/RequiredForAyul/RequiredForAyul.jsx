@@ -13,7 +13,7 @@ export const RequiredForAyul = () => {
                 <div className={s.bigMom}>
                     <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
                     <span className={s.header}>
-                        Каковы наши действия?
+                        {t("REQUIRED_FO_AYUL.OUR_ACTIONS")}
                     </span>
                 </div>
 
@@ -24,10 +24,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number3"
                             className={s.ball_icon}/>
-                        <h2>
-                            Запланировать время и место встречи.
-                            Выбор происходит на основе приглашений местных жителей.
-                        </h2>
+                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.FIRST_STEP")}</span>
                     </div>
                     <div className={s.ball}>
                         <Icon
@@ -35,9 +32,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number2"
                             className={s.ball_icon}/>
-                        <h2>
-                            Нам нужно на месте: заинтересованные взрослые и группа подростков на 15-20 человек.
-                        </h2>
+                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.SECOND_STEP")}</span>
                     </div>
                     <div className={s.ball}>
                         <Icon
@@ -45,9 +40,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number"
                             className={s.ball_icon}/>
-                        <h2>
-                            Найти место для проведения урока. (напр. кабинет информатики в школе)
-                        </h2>
+                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.THIRD_STEP")}</span>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export const Header = (props) => {
                             size={50}
                             icon="instagram"
                             className={s.iconInst}
-                        />  @ayul.go
+                        />  @auyl.go
                     </a>
                 </h2>
                 <div className={s.actionIcons}>

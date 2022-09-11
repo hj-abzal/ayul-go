@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import {gsap} from "gsap";
-import picture from "../../assets/img/aul.jfif";
 
 export const VintageAnimation = (props) => {
     useEffect(() => {
@@ -10,11 +9,11 @@ export const VintageAnimation = (props) => {
 
         let currentMask = 1;
         function swapMask(){
-            if (currentMask==3) currentMask = 1;
+            if (currentMask === 3) currentMask = 1;
             else currentMask++;
             gsap.set('.m', {attr:{'href':'https://assets.codepen.io/721952/liquidMask'+currentMask+'.svg'}})
         }
-    })
+    }, [])
 
     return (
         <svg className={props.className} viewBox="0 0 450 352" xmlns="http://www.w3.org/1500/svg">
@@ -23,12 +22,12 @@ export const VintageAnimation = (props) => {
                        height="10620"/>
             </mask>
             <mask id="m2">
-                <image className="m" className="maskImg" href="https://assets.codepen.io/721952/liquidMask1.svg"
+                <image className="m" className="m maskImg" href="https://assets.codepen.io/721952/liquidMask1.svg"
                        y="-1" width="630" height="10620"/>
             </mask>
-            <image mask="url(#m2)" href={picture} width="630" height="420"/>
+            <image mask="url(#m2)" href={"https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg"} width="630" height="420"/>
             <g mask="url(#m1)">
-                <image className="frog" href={picture} width="630"
+                <image className="frog" href={"https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg"} width="630"
                        height="420"/>
             </g>
         </svg>

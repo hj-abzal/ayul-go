@@ -1,6 +1,6 @@
 {
   "MAIN": {
-    "TITLE": "Ayul-go - it project.",
+    "TITLE": "Auyl-go - it project.",
     "WHO_WE_ARE": "We arrive where it is customary to leave from — to small towns and villages.",
     "WHAT_WE_DO": "We conduct free training programs, communicate with local teenagers, study and",
     "CREATE_WEBSITE": "create websites."
@@ -12,6 +12,10 @@
   },
 
   "REQUIRED_FO_AYUL": {
-    "TITLE": "Let's go to Ayul!"
+    "TITLE": "Let's go to Auyl!",
+    "OUR_ACTIONS": "What are our actions?",
+    "FIRST_STEP": "Schedule a time and place to meet. The choice is based on invitations from local residents.",
+    "SECOND_STEP": "We need to get there: interested adults and a group of 15-20 teenagers.",
+    "THIRD_STEP": "Find a place for the lesson. (ex. computer science room at school)"
   }
 }

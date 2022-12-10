@@ -1,14 +1,15 @@
 import React from 'react';
 import s from './RequiredForAyul.module.scss';
-import {Container} from "../../components/Styled";
 import {useTranslation} from "react-i18next";
 import {Icon} from "../../components/Icon/Icon";
 import {COLORS} from "../../components/Theme/Theme";
+import auylOverview from '../../assets/videos/video.MP4'
+import {Video} from "../../components/Video/Video";
 
 export const RequiredForAyul = () => {
     const {t} = useTranslation();
     return (
-        <Container className={s.wrapper}>
+        <div className={s.wrapper}>
             <div className={s.content}>
                 <div className={s.bigMom}>
                     <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
@@ -44,6 +45,7 @@ export const RequiredForAyul = () => {
                     </div>
                 </div>
             </div>
-        </Container>
+            <Video src={auylOverview}/>
+        </div>
     );
 };

@@ -3,8 +3,10 @@
 @import "../../assets/scss/templates";
 
 .wrapper {
+  position: relative;
   @include wrapper();
   @extend %flexCenter;
+  width: 100%;
 
   @media (max-width: 1200px) {
     height: auto;

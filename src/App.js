@@ -7,6 +7,7 @@ import {GlobalStyles} from "./components/Styled";
 import './assets/i18n/i18n';
 import {PicturePage} from "./components/PicturePage/PicturePage";
 import {RequiredForAyul} from "./pages/RequiredForAyul/RequiredForAyul";
+import carArrive from '../src/assets/videos/car-arrive.MP4'
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -31,7 +32,7 @@ function App() {
             <div className={styles.parent}>
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
-                <VideoPage/>
+                <VideoPage videoSrc={carArrive}/>
                 <PicturePage
                     title={'MISSION.TITLE'}
                     picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}

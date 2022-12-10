@@ -32,9 +32,10 @@
   }
 
   .animation {
-    padding-left: 1rem;
+    padding-left: 6rem;
     width: 45%;
   }
+
 
 
   @media (max-width: 1000px) {
@@ -58,4 +59,13 @@
 .blueBg {
   color: #f0f2f5;
   background-color: $focusColor;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+
+  .animation {
+    padding-right: 6rem;
+    padding-left: 0;
+  }
 }

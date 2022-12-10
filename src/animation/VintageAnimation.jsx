@@ -25,9 +25,9 @@ export const VintageAnimation = (props) => {
                 <image className="m" className="m maskImg" href="https://assets.codepen.io/721952/liquidMask1.svg"
                        y="-1" width="630" height="10620"/>
             </mask>
-            <image mask="url(#m2)" href={"https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg"} width="630" height="420"/>
+            <image mask="url(#m2)" href={props.href} width="630" height="420"/>
             <g mask="url(#m1)">
-                <image className="frog" href={"https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg"} width="630"
+                <image className="frog" href={props.href} width="630"
                        height="420"/>
             </g>
         </svg>

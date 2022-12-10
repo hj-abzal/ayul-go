@@ -19,13 +19,6 @@ export const Header = (props) => {
                     </a>
                 </h2>
                 <div className={s.actionIcons}>
-                    <Icon
-                        onClick={props.changeTheme}
-                            color="black"
-                            size={50}
-                            icon="theme"
-                            className={s.icon}
-                    />
                     <Language/>
                 </div>
             </div>

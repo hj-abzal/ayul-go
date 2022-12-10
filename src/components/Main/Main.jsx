@@ -1,9 +1,10 @@
 import React, {useEffect, useRef} from 'react';
 import s from './Main.module.scss';
-import {Container} from "../../components/Styled";
+import {Container} from "../Styled";
 import {useTranslation} from "react-i18next";
 import {Circle} from "../../animation/Circle/Circle";
 import '../../animation/Circle/Circle.scss'
+import video from "../../assets/videos/video.MP4"
 
 export const Main = () => {
     const {t} = useTranslation();
@@ -29,15 +30,11 @@ export const Main = () => {
     };
     return (
         <Container className={s.wrapper}>
+            <video loop autoPlay muted className={s.video}>
+                <source src={video}/>
+            </video>
             <div className={s.content}>
-                <h1> {t('MAIN.TITLE')}<br/></h1>
-                <span className={s.header}>
-                    {t('MAIN.WHO_WE_ARE')}<br/>
-                </span>
-                <p className={s.greyText}>
-                    {t('MAIN.WHAT_WE_DO')}
-                    <span className={s.blueBg}> {t('MAIN.CREATE_WEBSITE')}</span>
-                </p>
+               <div className={s.content}><h1>{t("MAIN.TITLE")}</h1></div>
             </div>
             <div>
                 <Circle size="sm" ref={addCircleRef} delay={0} />

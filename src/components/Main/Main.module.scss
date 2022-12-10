@@ -10,9 +10,10 @@
     @include content();
 
     h1 {
-      color: $focusColor;
+      color: black;
       font-weight: 900;
       line-height: 5rem;
+      font-size: 100px;
     }
 
     .header {
@@ -41,4 +42,14 @@
 .blueBg {
   color: #f0f2f5;
   background-color: $focusColor;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

@@ -1,5 +1,5 @@
 import styles from './App.module.scss';
-import {Main} from "./pages/Main/Main";
+import {Main} from "./components/Main/Main";
 import {Header} from "./components/Header/Header";
 import {Theme} from "./components/Theme/Theme";
 import {useEffect, useState} from "react";

@@ -3,8 +3,18 @@
 @import "../../assets/scss/templates";
 
 .wrapper {
+
   @include wrapper();
-  @extend %flexAlignCenterJustSB;
+
+  width: 100vw;
+  height: 100%;
+  background-color: $bgPrimaryColor;
+
+  .container {
+    height: 100%;
+    @include container();
+    @extend %flexAlignCenterJustSB;
+  }
 
   .content {
     @include content();

@@ -3,14 +3,14 @@
 @import "../../assets/scss/templates";
 
 .wrapper {
+  position: relative;
   @include wrapper();
   @extend %flexAlignCenterJustSB;
+  width: 100%;
 
   .content {
+    @include container();
     @include content();
-    .text{
-      overflow: hidden;
-    }
     h1 {
       color: $textColor;
       font-weight: 900;

@@ -17,7 +17,7 @@ export const PicturePage = (props) => {
                 {
                     props.animation
                         ? <VintageAnimation picture={props.picture} className={s.animation}/>
-                        : <img src={props.picture} style={{marginRight: '5rem'}} alt="animation"/>
+                        : <img src={props.picture} style={{marginRight: '5rem'}} alt="animation" className={s.animation}/>
                 }
             </div>
         </div>

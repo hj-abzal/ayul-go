@@ -10,8 +10,7 @@
     @include content();
 
     h1 {
-      color: $bgPrimaryColor;
-      color: #FEFEFE;
+      color: $textColor;
       font-weight: 900;
       line-height: 5rem;
       font-size: 100px;

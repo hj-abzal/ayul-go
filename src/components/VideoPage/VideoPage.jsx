@@ -4,6 +4,7 @@ import {Container} from "../Styled";
 import {useTranslation} from "react-i18next";
 import {Circle} from "../../animation/Circle/Circle";
 import '../../animation/Circle/Circle.scss'
+import {Video} from "../Video/Video";
 
 export const VideoPage = (props) => {
 
@@ -30,9 +31,7 @@ export const VideoPage = (props) => {
     };
     return (
         <Container className={s.wrapper}>
-            <video loop autoPlay muted className={s.video}>
-                <source src={props.video}/>
-            </video>
+            <Video src={props.videoSrc} />
             <div className={s.content}>
                <div className={s.content}><h1>{t("MAIN.TITLE")}</h1></div>
             </div>

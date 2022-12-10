@@ -3,10 +3,13 @@
 @import "../../assets/scss/templates";
 
 .wrapper {
+  position: relative;
   @include wrapper();
   @extend %flexAlignCenterJustSB;
+  width: 100%;
 
   .content {
+    @include container();
     @include content();
 
     h1 {

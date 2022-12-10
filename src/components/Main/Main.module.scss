@@ -10,7 +10,7 @@
     @include content();
 
     h1 {
-      color: black;
+      color: $bgPrimaryColor;
       font-weight: 900;
       line-height: 5rem;
       font-size: 100px;

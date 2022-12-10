@@ -5,7 +5,7 @@ import {Theme} from "./components/Theme/Theme";
 import {useEffect, useState} from "react";
 import {GlobalStyles} from "./components/Styled";
 import './assets/i18n/i18n';
-import {Mission} from "./pages/Mission/Mission";
+import {PicturePage} from "./components/PicturePage/PicturePage";
 import {RequiredForAyul} from "./pages/RequiredForAyul/RequiredForAyul";
 
 function App() {
@@ -32,7 +32,18 @@ function App() {
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
                 <Main/>
-                <Mission/>
+                <PicturePage
+                    title={'MISSION.TITLE'}
+                    picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
+                    description={'MISSION.OUR_GOAL'}
+                    animation
+                />
+                <PicturePage
+                    title={'MISSION.TITLE'}
+                    picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
+                    description={'MISSION.OUR_GOAL'}
+                    positionReversed
+                />
                 <RequiredForAyul/>
             </div>
         </Theme>

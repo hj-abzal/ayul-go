@@ -8,12 +8,15 @@
 
   .content {
     @include content();
-
+    .text{
+      overflow: hidden;
+    }
     h1 {
       color: $textColor;
       font-weight: 900;
       line-height: 5rem;
       font-size: 100px;
+
     }
 
     .header {
@@ -43,7 +46,12 @@
   color: #f0f2f5;
   background-color: $focusColor;
 }
-
+.letters {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 50px;
+}
 .video {
   object-fit: cover;
   width: 100%;

@@ -4,6 +4,7 @@ import {Container} from "../Styled";
 import {useTranslation} from "react-i18next";
 import {Circle} from "../../animation/Circle/Circle";
 import '../../animation/Circle/Circle.scss'
+import {gsap} from "gsap";
 
 export const VideoPage = (props) => {
 
@@ -23,6 +24,16 @@ export const VideoPage = (props) => {
         return () => window.removeEventListener("pointermove", onMove);
     }, []);
 
+    useEffect(() => {
+        let textAnimation = gsap.timeline();
+        textAnimation.from('.text', {
+            y: 100,
+            stagger: {
+                each: 0.3
+            }
+        });
+    }, []);
+
     const addCircleRef = ref => {
         if (ref) {
             circleRefs.current.push(ref);
@@ -34,7 +45,11 @@ export const VideoPage = (props) => {
                 <source src={props.video}/>
             </video>
             <div className={s.content}>
-               <div className={s.content}><h1>{t("MAIN.TITLE")}</h1></div>
+               <div className={s.content}><div className={s.letters}>
+                   {'fdsfdsaf'.split('').map((i)=>{
+                       return <div className="text">{i}</div>
+                   })}
+               </div></div>
             </div>
             <div>
                 <Circle size="sm" ref={addCircleRef} delay={0} />

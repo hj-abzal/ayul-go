@@ -38,13 +38,13 @@ function App() {
                     description={'MISSION.OUR_GOAL'}
                     animation
                 />
+                <RequiredForAyul/>
                 <PicturePage
                     title={'MISSION.TITLE'}
                     picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
                     description={'MISSION.OUR_GOAL'}
                     positionReversed
                 />
-                <RequiredForAyul/>
             </div>
         </Theme>
     );

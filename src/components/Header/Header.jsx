@@ -9,7 +9,7 @@ export const Header = (props) => {
         <div className={s.wrapper}>
             <div className={s.content}>
                 <h2>
-                    <a href="https://www.instagram.com/ayul.go/" target='_blank'>
+                    <a href="https://www.instagram.com/auyl.go/" target='_blank'>
                         <Icon
                             color="white"
                             size={50}

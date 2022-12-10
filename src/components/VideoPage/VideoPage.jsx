@@ -20,7 +20,7 @@ export const VideoPage = (props) => {
     };
 
     useEffect(() => {
-        circleRefs.current.forEach(ref => ref.moveTo(window.innerWidth / 2,  window.innerHeight / 2));
+        circleRefs.current.forEach(ref => ref.moveTo(window.innerWidth / 2, window.innerHeight / 2));
         window.addEventListener("pointermove", onMove);
         return () => window.removeEventListener("pointermove", onMove);
     }, []);
@@ -40,20 +40,27 @@ export const VideoPage = (props) => {
             circleRefs.current.push(ref);
         }
     };
+
+    const typing = t('MAIN.TITLE').split('').map((l, i) => {
+        let trimmedL = l.trim();
+        if (trimmedL) {
+            return <div key={i} className='text'>{l}</div>
+        }
+        return <div key={i} className='text'>&nbsp;</div>
+    })
+
     return (
         <Container className={s.wrapper}>
-            <Video src={props.videoSrc} />
+            <Video src={props.videoSrc}/>
             <div className={s.content}>
-               <div className={s.content}><div className={s.letters}>
-                   {'fdsfdsaf'.split('').map((i)=>{
-                       return <div className="text">{i}</div>
-                   })}
-               </div></div>
+                <div className={s.letters}>
+                    {typing}
+                </div>
             </div>
             <div>
-                <Circle size="sm" ref={addCircleRef} delay={0} />
-                <Circle size="md" ref={addCircleRef} delay={0.1} />
-                <Circle size="lg" ref={addCircleRef} delay={0.2} />
+                <Circle size="sm" ref={addCircleRef} delay={0}/>
+                <Circle size="md" ref={addCircleRef} delay={0.1}/>
+                <Circle size="lg" ref={addCircleRef} delay={0.2}/>
             </div>
         </Container>
     );

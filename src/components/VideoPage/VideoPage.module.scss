@@ -11,6 +11,7 @@
   .content {
     @include container();
     @include content();
+
     h1 {
       color: $textColor;
       font-weight: 900;
@@ -46,12 +47,16 @@
   color: #f0f2f5;
   background-color: $focusColor;
 }
+
 .letters {
+  width: 900px;
   display: flex;
   justify-content: center;
   overflow: hidden;
   font-size: 50px;
+  color: black;
 }
+
 .video {
   object-fit: cover;
   width: 100%;

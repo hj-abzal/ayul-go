@@ -1,5 +1,5 @@
 import styles from './App.module.scss';
-import {Main} from "./components/Main/Main";
+import {VideoPage} from "./components/VideoPage/VideoPage";
 import {Header} from "./components/Header/Header";
 import {Theme} from "./components/Theme/Theme";
 import {useEffect, useState} from "react";
@@ -31,7 +31,7 @@ function App() {
             <div className={styles.parent}>
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
-                <Main/>
+                <VideoPage/>
                 <PicturePage
                     title={'MISSION.TITLE'}
                     picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}

@@ -4,10 +4,10 @@ import {Container} from "../Styled";
 import {useTranslation} from "react-i18next";
 import {Circle} from "../../animation/Circle/Circle";
 import '../../animation/Circle/Circle.scss'
-import {Video} from "../Video/Video";
 import {gsap} from "gsap";
+import carArrive from '../../assets/videos/car-arrive.gif'
 
-export const VideoPage = (props) => {
+export const VideoPage = () => {
 
     const {t} = useTranslation();
     const circleRefs = useRef([]);
@@ -51,7 +51,7 @@ export const VideoPage = (props) => {
 
     return (
         <Container className={s.wrapper}>
-            <Video src={props.videoSrc}/>
+            <img src={carArrive} alt="" className={s.videoGif}/>
             <div className={s.content}>
                 <div className={s.letters}>
                     {typing}

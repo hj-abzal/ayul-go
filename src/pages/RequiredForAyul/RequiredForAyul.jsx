@@ -3,7 +3,7 @@ import s from './RequiredForAyul.module.scss';
 import {useTranslation} from "react-i18next";
 import {Icon} from "../../components/Icon/Icon";
 import {COLORS} from "../../components/Theme/Theme";
-// import auylOverview from '../../assets/videos/video.MP4'
+import schoolVideo from '../../assets/videos/school.mp4'
 import {Video} from "../../components/Video/Video";
 
 export const RequiredForAyul = () => {
@@ -12,9 +12,9 @@ export const RequiredForAyul = () => {
         <div className={s.wrapper}>
             <div className={s.content}>
                 <div className={s.bigMom}>
-                    <h1>{t("REQUIRED_FO_AYUL.TITLE")}</h1>
+                    <h1> №22 Бауыржан Момышұлы атындағы орта мектепке қош келдіңіздер!</h1>
                     <span className={s.header}>
-                        {t("REQUIRED_FO_AYUL.OUR_ACTIONS")}
+                        "...Бауыржандай батыр бол, Шерхандай рухты бол"
                     </span>
                 </div>
 
@@ -25,7 +25,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number3"
                             className={s.ball_icon}/>
-                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.FIRST_STEP")}</span>
+                        <span className={s.greyText}>2004 жылы Шерхан Мұртаза салды. 103 оқушы.</span>
                     </div>
                     <div className={s.ball}>
                         <Icon
@@ -33,7 +33,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number2"
                             className={s.ball_icon}/>
-                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.SECOND_STEP")}</span>
+                        <span className={s.greyText}>Үйірмелер: Бокс,би,волейбол,футбол. <br/> Бауыржан Момышұлы мұражайы</span>
                     </div>
                     <div className={s.ball}>
                         <Icon
@@ -41,11 +41,11 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number"
                             className={s.ball_icon}/>
-                        <span className={s.greyText}>{t("REQUIRED_FO_AYUL.THIRD_STEP")}</span>
+                        <span className={s.greyText}>Түлектер: <br/> Шерхан Мұртаза,<br/> Жалғас Мұртаза, <br/> Бекмұрат Аманқұлұлы</span>
                     </div>
                 </div>
             </div>
-            <Video src={''}/>
+            <Video src={schoolVideo}/>
         </div>
     );
 };

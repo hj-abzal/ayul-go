@@ -7,6 +7,8 @@ import {GlobalStyles} from "./components/Styled";
 import './assets/i18n/i18n';
 import {PicturePage} from "./components/PicturePage/PicturePage";
 import {RequiredForAyul} from "./pages/RequiredForAyul/RequiredForAyul";
+import auylPhoto from './assets/photos/dji_fly_20221210_150014_102_1670662898990_photo.JPG'
+import studentsPhoto from './assets/photos/IMG_5417.JPG'
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -31,17 +33,17 @@ function App() {
             <div className={styles.parent}>
                 <GlobalStyles/>
                 <Header changeTheme={changeTheme}/>
-                <VideoPage videoSrc={''}/>
+                <VideoPage/>
                 <PicturePage
-                    title={'MISSION.TITLE'}
-                    picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
-                    description={'MISSION.OUR_GOAL'}
+                    title='Талапты ауылына қош келдіңіздер!'
+                    picture={auylPhoto}
+                    description={'Талапты ауылы Жамбыл облысы, Жуалы ауданында орналасқан. Ауылда 650-ден астам тұрғындар тұрады. Біздің ауылда ұлы тұлғалар және танымыл спортшылар шыққан: Шерхан Мұртаза - қоғам қайраткері, халық жасушысы. Әбілхан Аманқұл - Қазақстан ұлттық құрамасының кәсіби боксшысы. Зерекбай Әліқұлов - биология ғылымдарының кандитаты. Жалғас Мұртаза - Жуалы ауданының әкімі.'}
                     animation
                 />
                 <RequiredForAyul/>
                 <PicturePage
                     title={'MISSION.TITLE'}
-                    picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
+                    picture={studentsPhoto}
                     description={'MISSION.OUR_GOAL'}
                     positionReversed
                 />

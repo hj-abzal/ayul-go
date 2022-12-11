@@ -8,5 +8,6 @@ export const Video = (props) => {
         <video loop autoPlay muted>
             <source src={props.src}/>
         </video>
+        // <img src={props.src} alt=""/>
     )
 }

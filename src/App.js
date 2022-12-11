@@ -42,9 +42,9 @@ function App() {
                 />
                 <RequiredForAyul/>
                 <PicturePage
-                    title={'MISSION.TITLE'}
+                    title={'Оқушылардың нәтижесі'}
                     picture={studentsPhoto}
-                    description={'MISSION.OUR_GOAL'}
+                    description={'2022 жылдың желтоқсан айының 10-11 күндері біз №22 мектеп оқушылары Ayul.go командасымен сайт жасауды үйрендік. Javascript,HTML, CSS терминдерімен таныстық.  Ал екінші күні электронды шақырту жасадық.Осы екі күн біз үшін пайдалы әрі әсерлі болды.'}
                     positionReversed
                 />
             </div>

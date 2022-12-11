@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Header.module.scss';
 import {Icon} from "../Icon/Icon";
-import {Language} from "../Language/Language";
 
 export const Header = (props) => {
 
@@ -19,7 +18,7 @@ export const Header = (props) => {
                     </a>
                 </h2>
                 <div className={s.actionIcons}>
-                    <Language/>
+                    {/*<Language/>*/}
                 </div>
             </div>
         </div>

@@ -33,9 +33,10 @@ function App() {
                 <Header changeTheme={changeTheme}/>
                 <VideoPage videoSrc={''}/>
                 <PicturePage
-                    title={'MISSION.TITLE'}
+                    title={'Талапты ауылына қош келдіңіздер!'}
                     picture={'https://forbes.kz/img/articles/108b818d1df2249ce42add390ef4ecac-big.jpg'}
-                    description={'MISSION.OUR_GOAL'}
+                    description={'Талапты ауылы Жамбыл облысы, Жуалы ауданында орналасқан. Ауылда 650-ден астам тұрғындар тұрады. Біздің ауылдан ұлы тұлғалар және танымал спортшылар шыққан: Шерхан Мұртаза-қоғам қайраткері, халық жазушысы. Әбілхан Аманқұл-Қазақстан ұлттық құрамасының кәсіби боксшысы. Зерекбай Әліқұлов-биология ғылымдарының кандидаты. Жалғас Мұртаза-Жуалы ауданының әкімі.'
+                        }
                     animation
                 />
                 <RequiredForAyul/>

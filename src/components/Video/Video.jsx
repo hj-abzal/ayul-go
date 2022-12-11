@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../../assets/videos/video.MP4";
+// import video from "../../assets/videos/video.MP4";
 import './Video.module.scss'
 
 

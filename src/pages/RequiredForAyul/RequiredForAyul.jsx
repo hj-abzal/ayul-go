@@ -3,7 +3,7 @@ import s from './RequiredForAyul.module.scss';
 import {useTranslation} from "react-i18next";
 import {Icon} from "../../components/Icon/Icon";
 import {COLORS} from "../../components/Theme/Theme";
-import auylOverview from '../../assets/videos/video.MP4'
+// import auylOverview from '../../assets/videos/video.MP4'
 import {Video} from "../../components/Video/Video";
 
 export const RequiredForAyul = () => {
@@ -45,7 +45,7 @@ export const RequiredForAyul = () => {
                     </div>
                 </div>
             </div>
-            <Video src={auylOverview}/>
+            <Video src={''}/>
         </div>
     );
 };

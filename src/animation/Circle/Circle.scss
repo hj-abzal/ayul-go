@@ -1,6 +1,7 @@
 @import "src/assets/scss/variables.scss";
 
 .circle {
+  z-index: 99;
   background-color: $focusColor;
   border-radius: 50%;
   position: fixed;

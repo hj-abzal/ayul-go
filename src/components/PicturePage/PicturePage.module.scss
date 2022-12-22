@@ -5,7 +5,7 @@
 .wrapper {
   @include wrapper();
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: $bgPrimaryColor;
 
   .container {
@@ -31,8 +31,7 @@
 
   .animation {
     padding-left: 6rem;
-    width: 45%;
-
+    width: 50%;
   }
 
 

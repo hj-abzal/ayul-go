@@ -9,6 +9,7 @@ import {PicturePage} from "./components/PicturePage/PicturePage";
 import {RequiredForAyul} from "./pages/RequiredForAyul/RequiredForAyul";
 import auylPhoto from './assets/photos/dji_fly_20221210_150014_102_1670662898990_photo.JPG'
 import studentsPhoto from './assets/photos/IMG_5417.JPG'
+import {Slideshow} from "./components/Slidshow/Slideshow";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -27,6 +28,32 @@ function App() {
     const changeTheme = () => {
         setIsDarkMode(!isDarkMode)
     };
+    const studentsFeedBack = [
+        {
+            title: "Оқушылардың нәтижесі",
+            picture: studentsPhoto,
+            description: '2022 жылдың желтоқсан айының 10-11 күндері біз №22 мектеп оқушылары Ayul.go командасымен сайт жасауды үйрендік. Javascript,HTML, CSS терминдерімен таныстық. Ал екінші күні электронды шақырту жасадық. Осы екі күн біз үшін пайдалы әрі әсерлі болды.'
+        },
+        {
+            title: "Оқушылардың нәтижесі",
+            picture: studentsPhoto,
+            description: '2022 жылдың желтоқсан айының 10-11 күндері біз №22 мектеп оқушылары Ayul.go командасымен сайт жасауды үйрендік. Javascript,HTML, CSS терминдерімен таныстық. Ал екінші күні электронды шақырту жасадық. Осы екі күн біз үшін пайдалы әрі әсерлі болды.'
+        },
+        {
+            title: "Оқушылардың нәтижесі",
+            picture: studentsPhoto,
+            description: '2022 жылдың желтоқсан айының 10-11 күндері біз №22 мектеп оқушылары Ayul.go командасымен сайт жасауды үйрендік. Javascript,HTML, CSS терминдерімен таныстық. Ал екінші күні электронды шақырту жасадық. Осы екі күн біз үшін пайдалы әрі әсерлі болды.'
+        },
+    ];
+
+    const studentsFeedBackComponent = studentsFeedBack.map(el => ({
+        component: <PicturePage
+            title={el.title}
+            picture={el.picture}
+            description={el.description}
+            positionReversed
+        />
+    }));
 
     return (
         <Theme darkMode={isDarkMode}>
@@ -38,15 +65,9 @@ function App() {
                     title='Талапты ауылына қош келдіңіздер!'
                     picture={auylPhoto}
                     description={'Талапты ауылы Жамбыл облысы, Жуалы ауданында орналасқан. Ауылда 650-ден астам тұрғындар тұрады. Біздің ауылда ұлы тұлғалар және танымыл спортшылар шыққан: Шерхан Мұртаза - қоғам қайраткері, халық жасушысы. Әбілхан Аманқұл - Қазақстан ұлттық құрамасының кәсіби боксшысы. Зерекбай Әліқұлов - биология ғылымдарының кандитаты. Жалғас Мұртаза - Жуалы ауданының әкімі.'}
-                    animation
                 />
                 <RequiredForAyul/>
-                <PicturePage
-                    title={'Оқушылардың нәтижесі'}
-                    picture={studentsPhoto}
-                    description={'2022 жылдың желтоқсан айының 10-11 күндері біз №22 мектеп оқушылары Ayul.go командасымен сайт жасауды үйрендік. Javascript,HTML, CSS терминдерімен таныстық. Ал екінші күні электронды шақырту жасадық. Осы екі күн біз үшін пайдалы әрі әсерлі болды.'}
-                    positionReversed
-                />
+                <Slideshow views={studentsFeedBackComponent}/>
             </div>
         </Theme>
     );

@@ -5,6 +5,7 @@ import {Icon} from "../../components/Icon/Icon";
 import {COLORS} from "../../components/Theme/Theme";
 import schoolVideo from '../../assets/videos/school.mp4'
 import {Video} from "../../components/Video/Video";
+import 'react-slideshow-image/dist/styles.css';
 
 export const RequiredForAyul = () => {
     const {t} = useTranslation();
@@ -33,7 +34,7 @@ export const RequiredForAyul = () => {
                             size={100}
                             icon="number2"
                             className={s.ball_icon}/>
-                        <span className={s.greyText}>Үйірмелер: Бокс,би,волейбол,футбол. <br/> Бауыржан Момышұлы мұражайы</span>
+                        <span className={s.greyText}>Үйірмелер: Бокс,би,волейбол,<br/>футбол. <br/> Бауыржан Момышұлы мұражайы</span>
                     </div>
                     <div className={s.ball}>
                         <Icon

@@ -1,0 +1,28 @@
+@import "../../assets/scss/variables";
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.slider-styles {
+    background: white !important;
+    height: 100%;
+}
+
+
+.indicator {
+    cursor: pointer;
+    margin: 3px;
+    text-align: center;
+    border: 1px #666 solid;
+    margin: 0;
+}
+
+.indicator.active {
+    color: #fff;
+    background: $focusColor;
+}

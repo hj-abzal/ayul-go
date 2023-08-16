@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae18ea24.css",
+    "main.js": "/static/js/main.a714d66e.js",
+    "static/media/car-arrive.gif": "/static/media/car-arrive.cf39bdddd465ec08dc90.gif",
+    "static/media/school.mp4": "/static/media/school.edb16782e96a01ad4aff.mp4",
+    "static/media/dji_fly_20221210_150014_102_1670662898990_photo.JPG": "/static/media/dji_fly_20221210_150014_102_1670662898990_photo.908275c0f95a804a8556.JPG",
+    "static/media/IMG_5417.JPG": "/static/media/IMG_5417.06df1cee3444ae589a39.JPG",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.ae18ea24.css.map": "/static/css/main.ae18ea24.css.map",
+    "main.a714d66e.js.map": "/static/js/main.a714d66e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae18ea24.css",
+    "static/js/main.a714d66e.js"
+  ]
+}
